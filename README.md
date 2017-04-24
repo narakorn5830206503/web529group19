@@ -9,7 +9,7 @@
 <hr>
 โครงงานนี้เป็นหนึ่งของรายวิชา 322-236 Web Application Programming
 
-[ภาควิชาวทยาการคอมพิวเตอร์]้(http://www.cs.kku.ac.th/)
+[ภาควิชาวิทยาการคอมพิวเตอร์]้(http://www.cs.kku.ac.th/)
 [คณะวิทยาศาสตร์]้(http://www.sc.kku.ac.th/)
 [มหาวิทยาลัยขอนแก่น](้http://www.kku.ac.th/)
 test
