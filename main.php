@@ -79,8 +79,8 @@ $(document).ready(function () {
         <!-- Logo
         ================================================== -->
         <div class="span5 logo">
-        	<a href="index.htm"><img src="pic/icon.png " alt=""/width=116 hight=40></a>
-            <h4>เลนส์กล้องถ่ายรูป</h4>
+        	<a href="main.php"><img src="pic/logo.png" alt=""/></a>
+            <!--<h4>เลนส์กล้องถ่ายรูป</h4>-->
         </div>
         
         <!-- Main Navigation
@@ -90,12 +90,13 @@ $(document).ready(function () {
             
             <ul class="nav">
             <li class="dropdown active">
-               <li><a href="index.htm">Home</a></li>
+               <li><a href="main.php">Home</a></li>
                 
             </li>
-           <li><a href="index-Nikon.htm">lens Nikon</a></li>
-		    <li><a href="index-Canon.htm">lens Canon </a></li>
-            <li class="dropdown">
+           <li><a href="index-Nikon.html">lens Nikon</a></li>
+		    <li><a href="index-Canon.html">lens Canon </a></li>
+			<li><a href="admin.php">Admin</a></li>
+            <!-- <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="page-full-width.htm">lens Canon <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                     <li><a href="page-full-width.htm">Full Width</a></li>
@@ -123,7 +124,7 @@ $(document).ready(function () {
                     <li><a href="blog-style4.htm">Blog Style 4</a></li>
                     <li><a href="blog-single.htm">Blog Single</a></li>
                 </ul>
-             </li>
+             </li> -->
              <li><a href="page-contact.htm">Contact</a></li>
             </ul>
            
@@ -135,8 +136,8 @@ $(document).ready(function () {
                 <div class="mobile-nav-select">
                 <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
                     <option value="">Navigate...</option>
-                    <option value="index.htm">Home</option>
-                        <option value="index.htm">- Full Page</option>
+                    <option value="main.php">Home</option>
+                        <option value="main.php">- Full Page</option>
                         <option value="index-gallery.htm">- Gallery Only</option>
                         <option value="index-slider.htm">- Slider Only</option>
                     <option value="features.htm">Features</option>
@@ -177,7 +178,7 @@ $(document).ready(function () {
                 <li><a href="gallery-single.htm"><img src="pic/111110085325680.jpg" alt="slider" /></a></li>
                 <li><a href="gallery-single.htm"><img src="pic/NIKON.jpg" alt="slider" /></a></li>
                 <li><a href="gallery-single.htm"><img src="pic/Nikon-Df.jpg" alt="slider" /></a></li>
-                <li><a href="gallery-single.htm"><img src="pic/1200.jpg" alt="slider" /></a></li>
+                <li><a href="gallery-single.htm"><img src="pic/Nikkor_lens_gp_zoomed_in.jpg" alt="slider" /></a></li>
               </ul>
             </div>
         </div>
@@ -198,8 +199,8 @@ $(document).ready(function () {
     <div class="row gallery-row"><!-- Begin Gallery Row --> 
       
     	<div class="span12">
-            <h5 class="title-bg">Recent Work 
-                <small>That we are most proud of</small>
+            <h5 class="title-bg">Best seller:
+                <small>The most popular items on Carera Lens Shop</small>
                 <button class="btn btn-mini btn-inverse hidden-phone" type="button">View Portfolio</button>
             </h5>
     	
@@ -267,8 +268,8 @@ $(document).ready(function () {
         ================================================== -->
     	<div class="span6">
 
-            <h5 class="title-bg">From the Blog 
-                <small>All the latest news</small>
+            <h5 class="title-bg">Web Administrator
+                
                 <button id="btn-blog-next" class="btn btn-inverse btn-mini" type="button">&raquo;</button>
                 <button id="btn-blog-prev" class="btn btn-inverse btn-mini" type="button">&laquo;</button>
             </h5>
@@ -280,49 +281,41 @@ $(document).ready(function () {
 
                  <!-- Blog Item 1 -->
                 <div class="active item">
-                    <a href="blog-single.htm"><img src="img/gallery/blog-med-img-1.jpg" alt="" class="align-left blog-thumb-preview" /></a>
+                    <a href="blog-single.htm"><img src="pic/s4.jpg" alt="" class="align-left blog-thumb-preview" /width=200 hight=100></a>
                     <div class="post-info clearfix">
-                        <h4><a href="blog-single.htm">A subject that is beautiful in itself</a></h4>
-                        <ul class="blog-details-preview">
-                            <li><i class="icon-calendar"></i><strong>Posted on:</strong> Sept 4, 2015<li>
-                            <li><i class="icon-user"></i><strong>Posted by:</strong> <a href="#" title="Link">Admin</a><li>
-                            <li><i class="icon-comment"></i><strong>Comments:</strong> <a href="#" title="Link">12</a><li>
-                            <li><i class="icon-tags"></i> <a href="#">photoshop</a>, <a href="#">tutorials</a>, <a href="#">illustration</a>
-                        </ul>
+                        <h4><a href="blog-single.htm">KHON KAEN UNIVERSITY</a></h4>
+                        <h6> Onpreeya Sompaht </h6>
                     </div>
-                    <p class="blog-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum felis fermentum ipsum molestie sed porttitor ligula rutrum. Vestibulum lectus tellus, aliquet et iaculis sed, volutpat vel erat. <a href="#">Read more</a><p>
+                    <p class="blog-summary">Cream </br>onpreeyasomp@gmail.com <p>
                 </div>
 
                 <!-- Blog Item 2 -->
                  <div class="item">
-                    <a href="blog-single.htm"><img src="img/gallery/blog-med-img-1.jpg" alt="" class="align-left blog-thumb-preview" /></a>
+                    <a href="blog-single.htm"><img src="pic/s1.jpg" alt="" class="align-left blog-thumb-preview" /width=200 hight=100></a>
                     <div class="post-info clearfix">
-                        <h4><a href="blog-single.htm">A great artist is always before his time</a></h4>
-                        <ul class="blog-details-preview">
-                            <li><i class="icon-calendar"></i><strong>Posted on:</strong> Sept 4, 2015<li>
-                            <li><i class="icon-user"></i><strong>Posted by:</strong> <a href="#" title="Link">Admin</a><li>
-                            <li><i class="icon-comment"></i><strong>Comments:</strong> <a href="#" title="Link">12</a><li>
-                            <li><i class="icon-tags"></i> <a href="#">photoshop</a>, <a href="#">tutorials</a>, <a href="#">illustration</a>
-                        </ul>
+                        <h4><a href="blog-single.htm">KHON KAEN UNIVERSITY</a></h4>
+                       <h6>Jirawan Pengnamkham</h6>
                     </div>
-                    <p class="blog-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum felis fermentum ipsum molestie sed porttitor ligula rutrum. Vestibulum lectus tellus, aliquet et iaculis sed, volutpat vel erat. <a href="#">Read more</a><p>
+                    <p class="blog-summary">boombim<br>boombim.kku@gmail.com<p>
                 </div>
 
                  <!-- Blog Item 3 -->
                  <div class="item">
-                    <a href="blog-single.htm"><img src="img/gallery/blog-med-img-1.jpg" alt="" class="align-left blog-thumb-preview" /></a>
+                    <a href="blog-single.htm"><img src="pic/s2.jpg" alt="" class="align-left blog-thumb-preview" /width=200 hight=100></a>
                     <div class="post-info clearfix">
-                        <h4><a href="blog-single.htm">Is art everything to anybody?</a></h4>
-                        <ul class="blog-details-preview">
-                            <li><i class="icon-calendar"></i><strong>Posted on:</strong> Sept 4, 2015<li>
-                            <li><i class="icon-user"></i><strong>Posted by:</strong> <a href="#" title="Link">Admin</a><li>
-                            <li><i class="icon-comment"></i><strong>Comments:</strong> <a href="#" title="Link">12</a><li>
-                            <li><i class="icon-tags"></i> <a href="#">photoshop</a>, <a href="#">tutorials</a>, <a href="#">illustration</a>
-                        </ul>
+                        <h4><a href="blog-single.htm">KHON KAEN UNIVERSITY</a></h4>
+                       <h6>Monticha Duangwiang</h6>
                     </div>
-                    <p class="blog-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum felis fermentum ipsum molestie sed porttitor ligula rutrum. Vestibulum lectus tellus, aliquet et iaculis sed, volutpat vel erat. <a href="#">Read more</a><p>
+                    <p class="blog-summary">Sol<br>solticha37@gmail.com <p>
                 </div>
-                
+				<div class="item">
+                    <a href="blog-single.htm"><img src="pic/s3.jpg" alt="" class="align-left blog-thumb-preview" /width=200 hight=100></a>
+                    <div class="post-info clearfix">
+                        <h4><a href="blog-single.htm">KHON KAEN UNIVERSITY</a></h4>
+                       <h6>Siripong Kongnitimutarameta</h6>
+                    </div>
+                    <p class="blog-summary">Best<br>Siripong2.01.2540@gmail.com<p>
+                </div>
             </div>
             </div> 	
         </div>
@@ -331,8 +324,8 @@ $(document).ready(function () {
         ================================================== -->
         <div class="span6">
 
-            <h5 class="title-bg">Recent Clients
-                <small>That love us</small>
+            <h5 class="title-bg">Vision
+                
                 <button id="btn-client-next" class="btn btn-inverse btn-mini" type="button">&raquo;</button>
                 <button id="btn-client-prev" class="btn btn-inverse btn-mini" type="button">&laquo;</button>
             </h5>
@@ -343,27 +336,20 @@ $(document).ready(function () {
             <div class="carousel-inner">
 
                 <div class="active item">
-                    <p class="quote-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum felis fermentum ipsum molestie sed porttitor ligula rutrum. Morbi blandit ultricies ultrices. Vivamus nec lectus sed orci molestie molestie."<cite>- Client Name, Big Company</cite></p>
+                    <p class="quote-text">"Any idea can turn to dust or magic,depending on the talent that rubs agains it."<cite>- William Bernbach</cite></p>
                 </div>
 
-                <div class="item">
-                    <p class="quote-text">"Adipiscing elit. In interdum felis fermentum ipsum molestie sed porttitor ligula rutrum. Morbi blandit ultricies ultrices. Vivamus nec lectus sed orci molestie molestie."<cite>- Another Client Name, Company Name</cite></p>
-                </div>
-
-                <div class="item">
-                    <p class="quote-text">"Mauris eget tellus sem. Cras sollicitudin sem eu elit aliquam quis condimentum nulla suscipit. Nam sed magna ante. Ut eget suscipit mauris."<cite>- On More Client, The Company</cite></p>
-                </div>
+                
                 
             </div>
             </div>
 
             <!-- Client Logo Thumbs-->
             <ul class="client-logos">
-                <li><a href="#" class="client-link"><img src="img/gallery/client-img-1.png" alt="Client"></a></li>
-                <li><a href="#" class="client-link"><img src="img/gallery/client-img-2.png" alt="Client"></a></li>
-                <li><a href="#" class="client-link"><img src="img/gallery/client-img-3.png" alt="Client"></a></li>
-                <li><a href="#" class="client-link"><img src="img/gallery/client-img-4.png" alt="Client"></a></li>
-                <li><a href="#" class="client-link"><img src="img/gallery/client-img-5.png" alt="Client"></a></li>
+                <li><a href="#" class="client-link"><img src="pic/c1.png" alt="Client"></a></li>
+                <li><a href="#" class="client-link"><img src="pic/c2.png" alt="Client"></a></li>
+                <li><a href="#" class="client-link"><img src="pic/c3.png" alt="Client"></a></li>
+                <li><a href="#" class="client-link"><img src="pic/c4.png" alt="Client"></a></li>
             </ul>
 
         </div>
@@ -380,11 +366,11 @@ $(document).ready(function () {
         	<div class="row footer-row">
                 <div class="span3 footer-col">
                     <h5>About Us</h5>
-                   <img src="img/piccolo-footer-logo.png" alt="Piccolo" /><br /><br />
+                   <img src="pic/logo.png" alt="Piccolo" /><br /><br />
                     <address>
-                        <strong>Design Team</strong><br />
-                        123 Main St, Suite 500<br />
-                        New York, NY 12345<br />
+                        <strong>Faculty of Science Khonkaen University</strong><br />
+                     <br />
+                      
                     </address>
                     <ul class="social-icons">
                         <li><a href="#" class="social-icon facebook"></a></li>
@@ -395,38 +381,44 @@ $(document).ready(function () {
                     </ul>
                 </div>
                 <div class="span3 footer-col">
-                    <h5>Latest Tweets</h5>
+                    <h5>Member</h5>
                     <ul>
-                        <li><a href="#">@room122</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                        <li><a href="#">@room122</a> In interdum felis fermentum ipsum molestie sed porttitor ligula rutrum. Morbi blandit ultricies ultrices.</li>
-                        <li><a href="#">@room122</a> Vivamus nec lectus sed orci molestie molestie. Etiam mattis neque eu orci rutrum aliquam.</li>
+                        <li> Onpreeya Sompaht<br>583021402-7</li>
+                        <li> Jirawan Pengnamkham<br>583020650-3</li>
+                        <li> Monticha Duangwiang<br>5830206757</li>
+						<li> Siripong Kongnitimutarameta<br>583020682-0</li>
                     </ul>
+						
                 </div>
                 <div class="span3 footer-col">
-                    <h5>Latest Posts</h5>
+                    <h5>Something to know "Lens"</h5>
                      <ul class="post-list">
-                        <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-                        <li><a href="#">Consectetur adipiscing elit est lacus gravida</a></li>
-                        <li><a href="#">Lectus sed orci molestie molestie etiam</a></li>
-                        <li><a href="#">Mattis consectetur adipiscing elit est lacus</a></li>
-                        <li><a href="#">Cras rutrum, massa non blandit convallis est</a></li>
+                        <li><a href="Len1.html">Learn the Lens Basics</a></li>
+                        <li><a href="Len2.html">Zoom Lenses vs. Prime Lenses</a></li>
+						<li><a href="Len3.html">Aperture</a></li>
+						<li><a href="Len4.html">Put it All Together</a></li>
+                        <li><a href="Len5.html">Types of Lenses</a></li>
                     </ul>
                 </div>
                 <div class="span3 footer-col">
-                    <h5>Flickr Photos</h5>
+                    <h5>Sample Photos</h5>
                     <ul class="img-feed">
-                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/a1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/a2.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/a3.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/a4.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/a5.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/a6.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/a7.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/a8.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/a9.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/a10.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/a11.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/a12.jpg" alt="Image Feed"></a></li>
+						<li><a href="#"><img src="img/gallery/a13.jpg" alt="Image Feed"></a></li>
+						<li><a href="#"><img src="img/gallery/a14.jpg" alt="Image Feed"></a></li>
+						<li><a href="#"><img src="img/gallery/a15.jpg" alt="Image Feed"></a></li>
+						<li><a href="#"><img src="img/gallery/a16.jpg" alt="Image Feed"></a></li>
                     </ul>
                 </div>
             </div>
@@ -434,12 +426,12 @@ $(document).ready(function () {
             <div class="row"><!-- Begin Sub Footer -->
                 <div class="span12 footer-col footer-sub">
                     <div class="row no-margin">
-                        <div class="span6"><span class="left">Copyright 2012 Piccolo Theme. All rights reserved.</span></div>
-                        <div class="span6">
+                        <div class="span6"><span class="left">Copyright 2017 Camera Lens Shop. All rights reserved.</span></div>
+                        <!--  <div class="span6">
                             <span class="right">
                             <a href="#">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Gallery</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Blog</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Contact</a>
                             </span>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div><!-- End Sub Footer -->
@@ -449,6 +441,5 @@ $(document).ready(function () {
     
     <!-- Scroll to Top -->  
     <div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>
-    
 </body>
 </html>
