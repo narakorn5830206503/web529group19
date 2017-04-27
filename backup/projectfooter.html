@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>	camera lens shop</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS
+================================================== -->
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-responsive.css">
+<link rel="stylesheet" href="css/prettyPhoto.css" />
+<link rel="stylesheet" href="css/flexslider.css" />
+<link rel="stylesheet" href="css/custom-styles.css">
+
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="css/style-ie.css"/>
+<![endif]--> 
+
+<!-- Favicons
+================================================== -->
+<link rel="shortcut icon" href="img/favicon.ico">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+<!-- JS
+================================================== -->
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/jquery.custom.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+
+    $("#btn-blog-next").click(function () {
+      $('#blogCarousel').carousel('next')
+    });
+     $("#btn-blog-prev").click(function () {
+      $('#blogCarousel').carousel('prev')
+    });
+
+     $("#btn-client-next").click(function () {
+      $('#clientCarousel').carousel('next')
+    });
+     $("#btn-client-prev").click(function () {
+      $('#clientCarousel').carousel('prev')
+    });
+    
+});
+
+ $(window).load(function(){
+
+    $('.flexslider').flexslider({
+        animation: "slide",
+        slideshow: true,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+    });  
+});
+
+</script>
+
+</head>
+
+<body class="home">
+
+    <!-- Footer Area
+        ================================================== -->
+
+	<div class="footer-container"><!-- Begin Footer -->
+    	<div class="container">
+        	<div class="row footer-row">
+                <div class="span3 footer-col">
+                    <h5>About Us</h5>
+                   <img src="pic/logo.png" alt="Piccolo" /><br /><br />
+                    <address>
+                        <strong>Faculty of Science Khonkaen University</strong><br />
+                     <br />
+                      
+                    </address>
+                    <ul class="social-icons">
+                        <li><a href="#" class="social-icon facebook"></a></li>
+                        <li><a href="#" class="social-icon twitter"></a></li>
+                        <li><a href="#" class="social-icon dribble"></a></li>
+                        <li><a href="#" class="social-icon rss"></a></li>
+                        <li><a href="#" class="social-icon forrst"></a></li>
+                    </ul>
+                </div>
+                <div class="span3 footer-col">
+                    <h5>Member</h5>
+                    <ul>
+                        <li> Onpreeya Sompaht<br>583021402-7</li>
+                        <li> Jirawan Pengnamkham<br>583020650-3</li>
+                        <li> Monticha Duangwiang<br>5830206757</li>
+						<li> Siripong Kongnitimutarameta<br>583020682-0</li>
+                    </ul>
+						
+                </div>
+                <div class="span3 footer-col">
+                    <h5>Something to know "Lens"</h5>
+                     <ul class="post-list">
+                        <li><a href="Len1.html">Learn the Lens Basics</a></li>
+                        <li><a href="Len2.html">Zoom Lenses vs. Prime Lenses</a></li>
+						<li><a href="Len3.html">Aperture</a></li>
+						<li><a href="Len4.html">Put it All Together</a></li>
+                        <li><a href="Len5.html">Types of Lenses</a></li>
+                    </ul>
+                </div>
+                <div class="span3 footer-col">
+                    <h5>Sample Photos</h5>
+                    <ul class="img-feed">
+                        <li><a href="#"><img src="img/gallery/a1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/a2.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/a3.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/a4.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/a5.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/a6.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/a7.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/a8.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/a9.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/a10.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/a11.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/a12.jpg" alt="Image Feed"></a></li>
+						<li><a href="#"><img src="img/gallery/a13.jpg" alt="Image Feed"></a></li>
+						<li><a href="#"><img src="img/gallery/a14.jpg" alt="Image Feed"></a></li>
+						<li><a href="#"><img src="img/gallery/a15.jpg" alt="Image Feed"></a></li>
+						<li><a href="#"><img src="img/gallery/a16.jpg" alt="Image Feed"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row"><!-- Begin Sub Footer -->
+                <div class="span12 footer-col footer-sub">
+                    <div class="row no-margin">
+                        <div class="span6"><span class="left">Copyright 2017 Camera Lens Shop. All rights reserved.</span></div>
+                        <!--  <div class="span6">
+                            <span class="right">
+                            <a href="#">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Gallery</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Blog</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Contact</a>
+                            </span>
+                        </div> -->
+                    </div>
+                </div>
+            </div><!-- End Sub Footer -->
+
+        </div>
+    </div><!-- End Footer --> 
+    
+    <!-- Scroll to Top -->  
+    <div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>
+</body>
+</html>
