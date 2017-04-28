@@ -88,7 +88,7 @@ readfile("gs://$appid/projectheader.html");
 				use google\appengine\api\users\UserService;
 				global $user;
 				global $appid,$page,$title;
-				$menufile="gs://$appid/projectnikon1.txt";
+				$menufile="gs://$appid/projectcanon1.txt";
 				if(!file_exists($menufile)){
 				file_put_contents($menufile,"home=555=home");
 				}

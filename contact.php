@@ -1,7 +1,7 @@
 <!doctype html>
 <?php
 $appid = "web592group19.appspot.com";
-$page = $_GET['p']; if($page=='') $page='Admin';
+$page = $_GET['p']; if($page=='') $page='contact';
 $title = $page;
 function panel_include($title,$file,$ptype='default'){
 echo "<div class='panel panel-$ptype'>";
@@ -14,6 +14,17 @@ echo "ไม่พบไฟล์ $file ";
 }
 echo "</div>";
 echo "</div>";
+}
+?>
+<?php
+use google\appengine\api\cloud_storage\CloudStorageTools;
+function userpic($uid){
+global $appid;
+$userpic="gs://$appid/{$uid}.jpg";
+if(!file_exists($userpic)){
+return "user.png";
+}
+return CloudStorageTools::getImageServingUrl($userpic,["size"=>200]);
 }
 ?>
 <html lang="en">
@@ -30,24 +41,15 @@ echo "</div>";
 <?php
 readfile("gs://$appid/projectheader.html");
 ?></header>
-<div>
+<div align="center">
+  <h2>Review</h2>
+</div>
+<div class="container">
 <div class="col-sm-3">
-<?php panel_include("User","project_user.php"); ?>
+<?php panel_include("User","project_user1.php"); ?>
 </div>
 <div class="col-sm-9">
-<?php panel_include($title,"project_body.php" ,"primary"); 
-echo "<a href='?p=edit&file=projectheader.html' class='btn btn-default'>แก้ไข header</a>";
-echo "<a href='?p=edit&file=projectfooter.html' class='btn btn-default'>แก้ไข footer</a>";
-echo "<a href='?p=edit&file=projectmain.html' class='btn btn-default'>แก้ไข Main Page</a>";
-echo "<a href='?p=edit&file=projectcanon1.txt' class='btn btn-default'>แก้ไข Canon Page 1</a>";
-echo "<a href='?p=edit&file=projectcanon2.txt' class='btn btn-default'>2</a>";
-echo "<a href='?p=edit&file=projectcanon3.txt' class='btn btn-default'>3</a>";
-echo "<a href='?p=edit&file=projectnikon1.txt' class='btn btn-default'>แก้ไข Nikon Page 1</a>";
-echo "<a href='?p=edit&file=projectnikon2.txt' class='btn btn-default'>2</a>";
-echo "<a href='?p=edit&file=projectnikon3.txt' class='btn btn-default'>3</a>";
-echo "</br>";
-echo "</br>";
-?>
+<?php panel_include($title,"project_body1.php" ,"primary"); ?>
 </div>
 </div>
 <footer><?php

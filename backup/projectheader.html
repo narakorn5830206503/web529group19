@@ -80,7 +80,7 @@ $(document).ready(function () {
         ================================================== -->
         <div class="span5 logo">
         	<a href="main.php"><img src="pic/logo.png" alt=""/></a>
-            <!--<h4>�Ź����ͧ�����ٻ</h4>-->
+            <!--<h4>เลนส์กล้องถ่ายรูป</h4>-->
         </div>
         
         <!-- Main Navigation
@@ -93,8 +93,20 @@ $(document).ready(function () {
                <li><a href="main.php">Home</a></li>
                 
             </li>
-           <li><a href="project_nikon.php">lens Nikon</a></li>
-		    <li><a href="project_canon.php">lens Canon </a></li>
+           <li class="dropdown">
+		   <a class="dropdown-toggle" data-toggle="dropdown" href="page-full-width.htm">lens Nikon<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="project_nikon1.php">ราคาต่ำกว่า 10000</a></li>
+                    <li><a href="project_nikon2.php">ราคา 10000-20000</a></li>
+                    <li><a href="project_nikon3.php">ราคามากกว่า 30000</a></li>
+                </ul>
+		    <li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="page-full-width.htm">lens Canon <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="project_canon1.php">ราคาต่ำกว่า 10000</a></li>
+                    <li><a href="project_canon2.php">ราคา 10000-20000</a></li>
+                    <li><a href="project_canon3.php">ราคามากกว่า 30000</a></li>
+                </ul>
 			<li><a href="admin.php">Admin</a></li>
             <!-- <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="page-full-width.htm">lens Canon <b class="caret"></b></a>

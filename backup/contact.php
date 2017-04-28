@@ -1,7 +1,20 @@
 <!doctype html>
 <?php
 $appid = "web592group19.appspot.com";
-
+$page = $_GET['p']; if($page=='') $page='main';
+$title = $page;
+function panel_include($title,$file,$ptype='default'){
+echo "<div class='panel panel-$ptype'>";
+echo "<div class='panel-heading'>$title</div>";
+echo "<div class='panel-body'>";
+if(file_exists($file)){
+include($file);
+}else{
+echo "ไม่พบไฟล์ $file ";
+}
+echo "</div>";
+echo "</div>";
+}
 ?>
 <html lang="en">
 <head>
@@ -75,53 +88,20 @@ $(document).ready(function () {
 <?php
 readfile("gs://$appid/projectheader.html");
 ?>
-<div class="row gallery-row"><!-- Begin Gallery Row --> 
-      
-    	<div class="span12">
-    	
-        <!-- Gallery Thumbnails
-        ================================================== -->
-		<!-- Gallery Item 1 -->
-            <div class="row clearfix no-margin">
-            <ul class="gallery-post-grid holder">
-				<?php use google\appengine\api\users\User;
-				use google\appengine\api\users\UserService;
-				global $user;
-				global $appid,$page,$title;
-				$menufile="gs://$appid/projectnikon1.txt";
-				if(!file_exists($menufile)){
-				file_put_contents($menufile,"home=555=home");
-				}
-				$data = file($menufile);
-				$title = $page;
-				foreach($data as $line){
-				$s = trim($line);
-				if($s!=''){
-				list($model,$picurl,$link,$price) = explode("=",$s);
-                echo   "<li  class='span3 gallery-item' data-id='id-1' data-type='illustration'>";
-                echo   "     <span class='gallery-hover-4col hidden-phone hidden-tablet'>";
-                echo    "        <span class='gallery-icons'>";
-                echo    "           <a href='$picurl' class='item-zoom-link lightbox' title='$model' data-rel='prettyPhoto'></a>";
-                echo    "           <a href='$link' class='item-details-link'></a>";
-                echo     "       </span>";
-                echo    "    </span>";
-                echo    "    <a href='gallery-single1.htm'><img src='$picurl' alt='Gallery'></a>";
-                echo   "     <span class='project-details'><a href='$link'>$model</a>$price</span>";
-                echo   " </li>";
-				}
-				}
-				if (UserService::isCurrentUserAdmin()){
-				}
-				?>
-			</ul>
-                </div>
-            </div>
- 
-    </div><!-- End Gallery Row -->
-</ul>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<h1>ติดต่อเรา</h1></br>
+<div class="fb-comments" data-href="https://web592group19.appspot.com/" data-numposts="5"></div>
+</br>
 </header>
-<footer class="text-center page-footer">
-<?php
+<footer class="text-center page-footer"><?php
 readfile("gs://$appid/projectfooter.html");
 ?>
 </footer>
