@@ -35,7 +35,10 @@ readfile("gs://$appid/projectheader.html");
 <?php panel_include("User","project_user.php"); ?>
 </div>
 <div class="col-sm-9">
-<?php panel_include($title,"project_body.php" ,"primary"); 
+<?php panel_include($title,"project_body.php" ,"primary");
+global $appid;
+use google\appengine\api\users\UserService;
+if (UserService::isCurrentUserAdmin()){ 
 echo "<a href='?p=edit&file=projectheader.html' class='btn btn-default'>แก้ไข header</a>";
 echo "<a href='?p=edit&file=projectfooter.html' class='btn btn-default'>แก้ไข footer</a>";
 echo "<a href='?p=edit&file=projectmain.html' class='btn btn-default'>แก้ไข Main Page</a>";
@@ -47,6 +50,7 @@ echo "<a href='?p=edit&file=projectnikon2.txt' class='btn btn-default'>2</a>";
 echo "<a href='?p=edit&file=projectnikon3.txt' class='btn btn-default'>3</a>";
 echo "</br>";
 echo "</br>";
+}
 ?>
 </div>
 </div>
