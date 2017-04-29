@@ -14,7 +14,7 @@ $fbdata[ ] = $rec;
 $fbjson = json_encode($fbdata, JSON_PRETTY_PRINT);
 
 file_put_contents($fbfile,$fbjson);
-echo "<br>บันทึกเรียบร้อย <a href='project.php?p=$page' id='pagelink'>ตกลง</a>";
+echo "<br>บันทึกเรียบร้อย <a href='contact.php' id='pagelink'>ตกลง</a>";
 return;
 }
 $pic = userpic($user->getUserId());
