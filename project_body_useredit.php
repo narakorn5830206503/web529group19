@@ -16,7 +16,7 @@ move_uploaded_file($_FILES['pic']['tmp_name'],$userpic);
 $json = json_encode($userdata, JSON_PRETTY_PRINT);
 $userfile = "gs://$appid/user_$uid.json";
 file_put_contents($userfile,$json);
-echo "<br>บันทึกเรียบร้อย <a href='work8.php?p=edituser'>ตกลง</a>";
+echo "<br>บันทึกเรียบร้อย <a href='contact.php'>ตกลง</a>";
 return;
 }
 ?>

@@ -19,7 +19,7 @@ $url = UserService::createLogoutUrl('/contact.php');
 // แสดงภาพผู้ใช้ โดยการเรียกฟังก์ชัน userpic จากข้อที่ 1
 echo "<img src='".userpic($uid)."' width='200'><br>";
 echo $userdata['nick'];
-echo "<br><a href='contact.php?p=edituser'>Edit User</a>";
+echo "<br><a href='contact.php?p=useredit'>Edit User</a>";
 echo "<br><a href='$url'>Logout</a>";
 }else{
 $url = UserService::createLoginUrl('/contact.php');
