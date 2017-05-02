@@ -1,4 +1,4 @@
-application: solticha-137
+application: web592group19
 version: 1
 runtime: php55
 api_version: 1
@@ -8,14 +8,13 @@ handlers:
 - url: /favicon\.ico
   static_files: favicon.ico
   upload: favicon\.ico
-  
-- url: /(.*\.(js|css|html|gif|png|jpg|wav|mp3|json|atlas|map|gs))$
+
+- url: /(.*\.(js|css|html|gif|png|jpg))$
   static_files: \1
-  upload: .*\.(js|css|html|gif|png|jpg|wav|mp3|json|atlas|map|gs)$
- 
+  upload: .*\.(js|css|html|gif|png|jpg)$
+  
 - url: /(.*\.php)$
   script: \1
-
- 
+  
 - url: .*
   script: main.php
